@@ -22,7 +22,7 @@ import { erc721Abi, Hex } from 'viem';
 export default function App() {
   const account = useAccount()
   const NFT = '0x03c4738ee98ae44591e1a4a4f3cab6641d95dd9a' // basenames
-  const {data} = useReadContract({
+  const { data } = useReadContract({
     abi: erc721Abi, 
     address: NFT, 
     functionName: 'balanceOf', 
